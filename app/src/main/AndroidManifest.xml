@@ -10,22 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pylabs">
         <activity
+            android:name=".test"
+            android:exported="false" />
+        <activity
+            android:name=".crd"
+            android:exported="false" />
+        <activity
+            android:name=".cd"
+            android:exported="false" />
+        <activity
+            android:name=".cardlist"
+            android:exported="false" />
+        <activity
             android:name=".intropy"
-            android:exported="false" />
-        <activity
-            android:name=".scrollview"
-            android:exported="false" />
-        <activity
-            android:name=".scroll"
-            android:exported="false" />
-        <activity
-            android:name=".intro"
-            android:exported="false" />
-        <activity
-            android:name=".intropy"
-            android:exported="false" />
-        <activity
-            android:name=".python"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

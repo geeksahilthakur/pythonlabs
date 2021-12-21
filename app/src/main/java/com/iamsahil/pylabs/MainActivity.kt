@@ -18,6 +18,12 @@ class MainActivity : AppCompatActivity() {
        b1.setOnClickListener {
             val intent = Intent(this, intropy::class.java)
             startActivity(intent)
+       }
+
+        val synbtn = findViewById<RelativeLayout>(R.id.synbtn)
+        synbtn.setOnClickListener {
+            val intent = Intent(this, test::class.java)
+            startActivity(intent)
         }
 
     }

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">pylabs</string>
     <string name="introduction">Introduction</string>
+    <string name="python_labs">Python Labs</string>
+    <string name="learn_python_from_starch">Learn python from starch</string>
+    <string name="python_variables">Python Variables</string>
 </resources>

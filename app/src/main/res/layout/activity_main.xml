@@ -116,10 +116,12 @@
 
 
             <RelativeLayout
+                android:id="@+id/synbtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/pink"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:clickable="true">
 
                 <TextView
                     android:id="@+id/title1"
