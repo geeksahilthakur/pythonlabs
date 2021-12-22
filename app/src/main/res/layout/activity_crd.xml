@@ -12,26 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="250dp"
-        android:fontFamily="@font/kkb"
-        android:text="@string/python_labs"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="250dp"
+            android:fontFamily="@font/kkb"
+            android:text="@string/python_labs"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.048" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,13 +56,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/t1"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             app:columnCount="2"
             app:rowCount="3">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/pyvarbtn"
+                android:clickable="true"
+                android:layout_width="100dp"
+                android:layout_height="197dp"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
@@ -95,8 +100,10 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/crd2"
+                android:clickable="true"
+                android:layout_width="100dp"
+                android:layout_height="197dp"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
@@ -129,8 +136,8 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="197dp"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
@@ -163,8 +170,6 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
@@ -197,8 +202,8 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="197dp"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
@@ -231,8 +236,8 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="197dp"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"

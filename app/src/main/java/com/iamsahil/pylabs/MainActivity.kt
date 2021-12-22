@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val synbtn = findViewById<RelativeLayout>(R.id.synbtn)
         synbtn.setOnClickListener {
-            val intent = Intent(this, test::class.java)
+            val intent = Intent(this, crd::class.java)
             startActivity(intent)
         }
 

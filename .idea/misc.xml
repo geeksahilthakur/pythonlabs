@@ -6,14 +6,17 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/drawable/splashscreenbg.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_cardlist.xml" value="0.22" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_cd.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_crd.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_codeview.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_crd.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_datatype.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_detailactivity.xml" value="0.20253164556962025" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_intro.xml" value="0.1863905325443787" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_intro2.xml" value="0.5" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_intropy.xml" value="0.22" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_main2.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_python.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_pyvar.xml" value="0.22" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_scroll.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_scrollview.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/pylabs/app/src/main/res/layout/activity_splashscreen.xml" value="0.17552083333333332" />

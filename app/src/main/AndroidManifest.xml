@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pylabs">
         <activity
+            android:name=".datatype"
+            android:exported="false" />
+        <activity
+            android:name=".codeview"
+            android:exported="false" />
+        <activity
+            android:name=".pyvar"
+            android:exported="false" />
+        <activity
             android:name=".test"
             android:exported="false" />
         <activity
