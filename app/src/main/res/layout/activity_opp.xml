@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loops">
+    tools:context=".opp">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="loop"
+                android:text="OOP"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="loops in python programming"
+                android:text="Object-oriented Programming"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -71,54 +71,42 @@
                 android:src="@drawable/teacher" />
 
             <TextView
+                android:id="@+id/txt1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
+                android:text="Python is a multi-paradigm programming language. It supports different programming approaches.One of the popular approaches to solve a programming problem is by creating objects. This is known as Object-Oriented Programming (OOP)."
                 android:fontFamily="sans-serif-light"
-                android:text="\n In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain condition is reached. ... A loop is a fundamental programming idea that is commonly used in writing programs."
                 android:textAlignment="viewEnd"
                 android:textSize="17sp" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/kkb"
-            android:text="What is for loop in Python?"
-            android:textAlignment="center"
-            android:textColor="@color/pink"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ll2" />
-
-
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/frlp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-light"
-            android:text="The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal."
-            app:layout_constraintTop_toBottomOf="@id/tv2" />
-
         <TextView
             android:id="@+id/tv3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Example: Python for Loop"
+            android:text="Class"
             android:textAlignment="center"
             android:textColor="@color/green"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frlp" />
+            app:layout_constraintTop_toBottomOf="@+id/ll2" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="A class is a blueprint for the object.We can think of class as a sketch of a parrot with labels. It contains all the details about the name, colors, size etc. Based on these descriptions, we can study about the parrot. Here, a parrot is an object.The example for class of parrot can be :"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
 
 
         <androidx.cardview.widget.CardView
@@ -132,7 +120,7 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            app:layout_constraintTop_toBottomOf="@+id/txt4"
             tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
 
 
@@ -148,13 +136,12 @@
 
 
                 <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview"
+                    android:id="@+id/cdv1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
-
 
         <TextView
             android:id="@+id/tv4"
@@ -162,13 +149,27 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Output"
+            android:text="Object"
             android:textAlignment="center"
-            android:textColor="@color/orange"
+            android:textColor="@color/pink"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crd1" />
+            app:layout_constraintTop_toBottomOf="@+id/crd1" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="An object (instance) is an instantiation of a class. When class is defined, only the description for the object is defined. Therefore, no memory or storage is allocated.The example for object of parrot class can be:"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv4" />
 
 
         <androidx.cardview.widget.CardView
@@ -182,86 +183,8 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv4"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
-
-
-            <RelativeLayout
-                android:id="@+id/b3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/grey"
-                android:clickable="true"
-                android:padding="10dp"
-                android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
-
-
-                <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
-
-
-        <TextView
-            android:id="@+id/tv5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/kkb"
-            android:text="What is while loop in Python?"
-            android:textAlignment="center"
-            android:textColor="@color/pink"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/crd2" />
-
-
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/frlp1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-light"
-            android:text="The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.We generally use this loop when we don't know the number of times to iterate beforehand."
-            app:layout_constraintTop_toBottomOf="@id/tv5" />
-
-        <TextView
-            android:id="@+id/tv6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/kkb"
-            android:text="Example: Python while Loop"
-            android:textAlignment="center"
-            android:textColor="@color/green"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frlp1" />
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/crd3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:clickable="true"
-            app:cardCornerRadius="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv6"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+            app:layout_constraintTop_toBottomOf="@+id/txt5"
+            tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck">
 
 
             <RelativeLayout
@@ -276,31 +199,30 @@
 
 
                 <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview2"
+                    android:id="@+id/cdv2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
-
         <TextView
-            android:id="@+id/tv7"
+            android:id="@+id/tv5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Output"
+            android:text="Example 1: Creating Class and Object in Python"
             android:textAlignment="center"
-            android:textColor="@color/orange"
+            android:textColor="@color/green"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crd3" />
+            app:layout_constraintTop_toBottomOf="@+id/crd2" />
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/crd4"
+            android:id="@+id/crd3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -310,9 +232,54 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv7"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck"
-            android:focusable="true">
+            app:layout_constraintTop_toBottomOf="@+id/tv5">
+
+
+            <RelativeLayout
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:clickable="true"
+                android:padding="10dp"
+                android:textAlignment="center"
+                tools:ignore="SpeakableTextPresentCheck">
+
+
+                <thereisnospon.codeview.CodeView
+                    android:id="@+id/cdv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/kkb"
+            android:text="Output"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crd3" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv6">
 
 
             <RelativeLayout
@@ -327,22 +294,27 @@
 
 
                 <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview3"
+                    android:id="@+id/cdv4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="In the above program, we created a class with the name Parrot. Then, we define attributes. \n \n The attributes are a characteristic of an object.These attributes are defined inside the __init__ method of the class. It is the initializer method that is first run as soon as the object is created.\n \n Then, we create instances of the Parrot class. Here, blu and woo are references (value) to our new objects.\n \n We can access the class attribute using __class__.species. Class attributes are the same for all instances of a class. Similarly, we access the instance attributes using blu.name and blu.age. However, instance attributes are different for every instance of a class."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crd4" />
 
-
-
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
-
-

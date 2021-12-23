@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loops">
+    android:fillViewport="true"
+    tools:context=".io">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="loop"
+                android:text="File I/O"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="loops in python programming"
+                android:text="file operations python"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -71,40 +72,15 @@
                 android:src="@drawable/teacher" />
 
             <TextView
+                android:id="@+id/txt1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:fontFamily="sans-serif-light"
-                android:text="\n In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain condition is reached. ... A loop is a fundamental programming idea that is commonly used in writing programs."
+                android:text="\n When we want to read from or write to a file, we need to open it first. When we are done, it needs to be closed so that the resources that are tied with the file are freed.Hence, in Python, a file operation takes place in the following order:"
                 android:textAlignment="viewEnd"
                 android:textSize="17sp" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/kkb"
-            android:text="What is for loop in Python?"
-            android:textAlignment="center"
-            android:textColor="@color/pink"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ll2" />
-
-
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/frlp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-light"
-            android:text="The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal."
-            app:layout_constraintTop_toBottomOf="@id/tv2" />
 
         <TextView
             android:id="@+id/tv3"
@@ -112,19 +88,33 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Example: Python for Loop"
+            android:text="Opening Files in Python"
             android:textAlignment="center"
             android:textColor="@color/green"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frlp" />
+            app:layout_constraintTop_toBottomOf="@+id/ll2" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Python has a built-in open() function to open a file. This function returns a file object, also called a handle, as it is used to read or modify the file accordingly."
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
 
 
         <androidx.cardview.widget.CardView
             android:id="@+id/crd1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="110dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
@@ -132,8 +122,8 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv3"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+            app:layout_constraintTop_toBottomOf="@+id/txt4"
+            tools:ignore="DuplicateClickableBoundsCheck">
 
 
             <RelativeLayout
@@ -148,13 +138,12 @@
 
 
                 <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview"
+                    android:id="@+id/cdv1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
-
 
         <TextView
             android:id="@+id/tv4"
@@ -162,13 +151,27 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Output"
+            android:text="Writing to Files in Python"
             android:textAlignment="center"
-            android:textColor="@color/orange"
+            android:textColor="@color/pink"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crd1" />
+            app:layout_constraintTop_toBottomOf="@+id/crd1" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="In order to write into a file in Python, we need to open it in write w, append a or exclusive creation x mode.We need to be careful with the w mode, as it will overwrite into the file if it already exists. Due to this, all the previous data are erased.Writing a string or sequence of bytes (for binary files) is done using the write() method. This method returns the number of characters written to the file."
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv4" />
 
 
         <androidx.cardview.widget.CardView
@@ -182,86 +185,7 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv4"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
-
-
-            <RelativeLayout
-                android:id="@+id/b3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/grey"
-                android:clickable="true"
-                android:padding="10dp"
-                android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
-
-
-                <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
-
-
-        <TextView
-            android:id="@+id/tv5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/kkb"
-            android:text="What is while loop in Python?"
-            android:textAlignment="center"
-            android:textColor="@color/pink"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/crd2" />
-
-
-        <TextView
-            android:layout_marginTop="20dp"
-            android:id="@+id/frlp1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-light"
-            android:text="The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.We generally use this loop when we don't know the number of times to iterate beforehand."
-            app:layout_constraintTop_toBottomOf="@id/tv5" />
-
-        <TextView
-            android:id="@+id/tv6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/kkb"
-            android:text="Example: Python while Loop"
-            android:textAlignment="center"
-            android:textColor="@color/green"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frlp1" />
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/crd3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:clickable="true"
-            app:cardCornerRadius="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv6"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+            app:layout_constraintTop_toBottomOf="@+id/txt5">
 
 
             <RelativeLayout
@@ -276,31 +200,44 @@
 
 
                 <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview2"
+                    android:id="@+id/cdv2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
-
         <TextView
-            android:id="@+id/tv7"
+            android:id="@+id/tv5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Output"
+            android:text="Reading Files in Python"
             android:textAlignment="center"
             android:textColor="@color/orange"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crd3" />
+            app:layout_constraintTop_toBottomOf="@+id/crd2" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="To read a file in Python, we must open the file in reading r mode.There are various methods available for this purpose. We can use the read(size) method to read in the size number of data. If the size parameter is not specified, it reads and returns up to the end of the file.We can read the text.txt file we wrote in the above section in the following way:"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv5" />
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/crd4"
+            android:id="@+id/crd3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -310,9 +247,69 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv7"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck"
-            android:focusable="true">
+            app:layout_constraintTop_toBottomOf="@+id/txt6">
+
+
+            <RelativeLayout
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:clickable="true"
+                android:padding="10dp"
+                android:textAlignment="center"
+                tools:ignore="SpeakableTextPresentCheck">
+
+
+                <thereisnospon.codeview.CodeView
+                    android:id="@+id/cdv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/kkb"
+            android:text="Closing Files in Python"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crd3" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="When we are done with performing operations on the file, we need to properly close the file.Closing a file will free up the resources that were tied with the file. It is done using the close() method available in Python.Python has a garbage collector to clean up unreferenced objects but we must not rely on it to close the file."
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd4"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt7">
 
 
             <RelativeLayout
@@ -327,7 +324,7 @@
 
 
                 <thereisnospon.codeview.CodeView
-                    android:id="@+id/codeview3"
+                    android:id="@+id/cdv4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </RelativeLayout>
@@ -342,7 +339,32 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
-
-

@@ -136,6 +136,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:clickable="true"
                 android:id="@+id/crd3"
                 android:layout_width="100dp"
                 android:layout_height="197dp"
@@ -172,6 +173,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:clickable="true"
                 android:id="@+id/crdloops"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
@@ -206,6 +208,8 @@
 
 
             <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:id="@+id/fio"
                 android:layout_width="100dp"
                 android:layout_height="197dp"
                 android:layout_margin="8dp"
@@ -241,6 +245,8 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/oop"
+                android:clickable="true"
                 android:layout_width="100dp"
                 android:layout_height="197dp"
                 android:layout_margin="8dp"

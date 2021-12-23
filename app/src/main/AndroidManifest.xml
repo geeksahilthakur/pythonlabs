@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pylabs">
         <activity
+            android:name=".opp"
+            android:exported="false" />
+        <activity
+            android:name=".io"
+            android:exported="false" />
+        <activity
             android:name=".loops"
             android:exported="false" />
         <activity

@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/kollektif"
-                android:text="if...else statement in Python"
+                android:text="if else statement in Python"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="25sp"
@@ -109,9 +109,8 @@
 
             <TextView
                 android:id="@+id/pynum"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="72dp"
                 android:layout_marginTop="20dp"
                 android:text="Python if Statement Syntax"
                 android:textAlignment="center"
@@ -157,13 +156,12 @@
 
             <TextView
                 android:id="@+id/pynum1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="52dp"
                 android:layout_marginTop="32dp"
                 android:text="Example: Python if Statement"
                 android:textAlignment="center"
-                android:textColor="@color/pink"
+                android:textColor="@color/orange"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd1" />
@@ -203,7 +201,7 @@
 
             <TextView
                 android:id="@+id/out1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/kkb"
@@ -211,6 +209,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd2" />
 
 
@@ -250,9 +250,8 @@
 
             <TextView
                 android:id="@+id/pynum2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="112dp"
                 android:layout_marginTop="24dp"
                 android:text="Syntax of if else"
                 android:textAlignment="center"
@@ -298,13 +297,12 @@
 
             <TextView
                 android:id="@+id/pynum6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="28dp"
-                android:text="Example of if...else"
+                android:text="Example of if else"
                 android:textAlignment="center"
-                android:textColor="@color/pink"
+                android:textColor="@color/orange"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd4" />
@@ -344,7 +342,7 @@
 
             <TextView
                 android:id="@+id/out2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/kkb"
@@ -352,6 +350,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd5" />
 
 
@@ -363,6 +363,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:clickable="true"
+                android:minHeight="48dp"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -391,10 +392,9 @@
 
             <TextView
                 android:id="@+id/elif"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="15dp"
                 android:text="Python if elif else Statement"
                 android:textAlignment="center"
                 android:textColor="@color/pink"
@@ -438,13 +438,12 @@
 
             <TextView
                 android:id="@+id/elif1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="84dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="15dp"
                 android:text="Example of if elif else "
                 android:textAlignment="center"
-                android:textColor="@color/pink"
+                android:textColor="@color/orange"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd7" />

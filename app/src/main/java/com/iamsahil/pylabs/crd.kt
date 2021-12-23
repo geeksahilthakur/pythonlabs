@@ -38,6 +38,18 @@ class crd : AppCompatActivity() {
             startActivity(intent)
         };
 
+        val fio = findViewById<CardView>(R.id.fio)
+        fio.setOnClickListener {
+            val intent = Intent(this, io::class.java)
+            startActivity(intent)
+        };
+
+        val oop = findViewById<CardView>(R.id.oop)
+        oop.setOnClickListener {
+            val intent = Intent(this, opp::class.java)
+            startActivity(intent)
+        };
+
 
 
 
