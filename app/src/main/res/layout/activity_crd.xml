@@ -18,10 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:layout_marginStart="19dp"
             android:layout_marginTop="19dp"
-            android:layout_marginEnd="250dp"
             android:fontFamily="@font/kkb"
             android:text="@string/python_labs"
             android:textColor="@color/black"
@@ -37,9 +35,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/t1"
-            android:layout_alignEnd="@+id/t1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="5dp"
             android:text="@string/learn_python_from_starch"
             android:textColor="@color/black"
             android:textSize="12sp"
@@ -65,10 +63,10 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/pyvarbtn"
-                android:clickable="true"
-                android:layout_width="100dp"
+                android:layout_width="105dp"
                 android:layout_height="197dp"
                 android:layout_margin="8dp"
+                android:clickable="true"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
                 app:layout_column="0"
@@ -87,11 +85,12 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pyhtonicon" />
+                        android:src="@drawable/var" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="@string/python_variables"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
@@ -101,10 +100,10 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/crd2"
-                android:clickable="true"
-                android:layout_width="100dp"
+                android:layout_width="109dp"
                 android:layout_height="197dp"
                 android:layout_margin="8dp"
+                android:clickable="true"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
                 app:layout_column="1"
@@ -123,12 +122,13 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pyhtonicon" />
+                        android:src="@drawable/data" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/python_variables"
+                        android:layout_marginTop="10dp"
+                        android:text="Python Datatype"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -136,6 +136,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd3"
                 android:layout_width="100dp"
                 android:layout_height="197dp"
                 android:layout_margin="8dp"
@@ -157,12 +158,13 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pyhtonicon" />
+                        android:src="@drawable/ifelse" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/python_variables"
+                        android:layout_marginTop="10dp"
+                        android:text="if else Statments"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -170,6 +172,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crdloops"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
@@ -189,12 +192,13 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pyhtonicon" />
+                        android:src="@drawable/loops" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/python_variables"
+                        android:layout_marginTop="10dp"
+                        android:text="Loops in Python"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -223,12 +227,13 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pyhtonicon" />
+                        android:src="@drawable/files" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/python_variables"
+                        android:layout_marginTop="10dp"
+                        android:text="Python File I/O"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -257,12 +262,13 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pyhtonicon" />
+                        android:src="@drawable/oop" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/python_variables"
+                        android:layout_marginTop="10dp"
+                        android:text="Python OOP"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>

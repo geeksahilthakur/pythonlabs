@@ -19,7 +19,22 @@ class crd : AppCompatActivity() {
 
         val crd2 = findViewById<CardView>(R.id.crd2)
         crd2.setOnClickListener {
-            val intent = Intent(this, pyvar::class.java)
+            val intent = Intent(this, datatype::class.java)
+            startActivity(intent)
+        };
+
+
+        val crd3 = findViewById<CardView>(R.id.crd3)
+        crd3.setOnClickListener {
+            val intent = Intent(this, ifelse::class.java)
+            startActivity(intent)
+        };
+
+
+
+        val crdloops = findViewById<CardView>(R.id.crdloops)
+        crdloops.setOnClickListener {
+            val intent = Intent(this, loops::class.java)
             startActivity(intent)
         };
 

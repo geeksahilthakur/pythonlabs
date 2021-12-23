@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datatype"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kkb"
+                android:text="Data Types"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.097"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.048" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data types in python programming"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.097"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.048"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <ImageView
+               android:id="@+id/tech1"
+               android:layout_width="115dp"
+               android:layout_height="250dp"
+               android:src="@drawable/teacher"/>
+
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="viewEnd"
+                android:text=" \n \n In the Python Programming Language, everything is an object. Data types in Python represents the classes. The objects or instances of these classes are called variables. Let us now discuss the different kinds of data types in Python. "
+                android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pydtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/kollektif"
+                android:text="Built-in Data Types in Python"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:id="@+id/pynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text=" 1. Python Numbers "
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pydtype" />
+
+            <TextView
+                android:id="@+id/pynumdis"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="We can find complex numbers, floating point numbers and integers in the category of Python Numbers. Complex numbers are defined as a complex class, floating point numbers are defined as float and integers are defined as an int in Python."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynum" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynumdis"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/out1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/green"
+                android:text="Output"
+                android:textSize="20sp"
+                android:fontFamily="@font/kkb"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/crd1"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/out1"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/pynum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="2. Python List"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crd2" />
+
+            <TextView
+                android:id="@+id/pynumdis1"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="List is an ordered sequence of items. It is one of the most used datatype in Python and is very flexible. All the items in a list do not need to be of the same type.Declaring a list is pretty straight forward. Items separated by commas are enclosed within brackets [ ]."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynum1"
+                tools:ignore="HardcodedText" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynumdis1"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/out3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/green"
+                android:text="Output"
+                android:textSize="20sp"
+                android:fontFamily="@font/kkb"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/crd3"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/out3"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/pynum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="3. Python Tuple"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crd4" />
+
+            <TextView
+                android:id="@+id/pynumdis2"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Tuple is an ordered sequence of items same as a list. The only difference is that tuples are immutable. Tuples once created cannot be modified.Tuples are used to write-protect data and are usually faster than lists as they cannot change dynamically.It is defined within parentheses () where items are separated by commas."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynum3"
+                tools:ignore="HardcodedText" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynumdis2"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b112"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/out4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/green"
+                android:text="Output"
+                android:textSize="20sp"
+                android:fontFamily="@font/kkb"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/crd5"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/out4"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/pynum4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="4. Python Strings"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crd6" />
+
+            <TextView
+                android:id="@+id/pynumdis3"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, '''  "
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynum4"
+                tools:ignore="HardcodedText" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynumdis3"
+                tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b113"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/out5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/green"
+                android:text="Output"
+                android:textSize="20sp"
+                android:fontFamily="@font/kkb"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/crd7"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/out5"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/pynum5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="5. Python Set"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crd8" />
+
+            <TextView
+                android:id="@+id/pynumdis4"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces { }. Items in a set are not ordered."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynum5"
+                tools:ignore="HardcodedText" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynumdis4"
+                tools:ignore="DuplicateClickableBoundsCheck">
+
+
+                <RelativeLayout
+                    android:id="@+id/b114"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/out6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/green"
+                android:text="Output"
+                android:textSize="20sp"
+                android:fontFamily="@font/kkb"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/crd9"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/out6"
+                tools:ignore="DuplicateClickableBoundsCheck">
+                <RelativeLayout
+                    android:id="@+id/b5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/pynum6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="6. Python Dictionary"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crd10" />
+
+            <TextView
+                android:id="@+id/pynumdis5"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Dictionary is an unordered collection of key-value pairs.It is generally used when we have a huge amount of data. Dictionaries are optimized for retrieving data. We must know the key to retrieve the value.In Python, dictionaries are defined within braces {} with each item being a pair in the form key:value. Key and value can be of any type."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynum6"
+                tools:ignore="HardcodedText" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pynumdis5"
+                tools:ignore="DuplicateClickableBoundsCheck">
+                <RelativeLayout
+                    android:id="@+id/b115"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/out7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/green"
+                android:text="Output"
+                android:textSize="20sp"
+                android:fontFamily="@font/kkb"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/crd11"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/out7"
+                tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+                <RelativeLayout
+                    android:id="@+id/b7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    tools:ignore="SpeakableTextPresentCheck">
+                    <thereisnospon.codeview.CodeView
+                        android:id="@+id/cdv12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
