@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/snake"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -25,22 +25,10 @@
             android:name=".datatype"
             android:exported="false" />
         <activity
-            android:name=".codeview"
-            android:exported="false" />
-        <activity
             android:name=".pyvar"
             android:exported="false" />
         <activity
-            android:name=".test"
-            android:exported="false" />
-        <activity
             android:name=".crd"
-            android:exported="false" />
-        <activity
-            android:name=".cd"
-            android:exported="false" />
-        <activity
-            android:name=".cardlist"
             android:exported="false" />
         <activity
             android:name=".intropy"
