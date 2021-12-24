@@ -26,5 +26,13 @@ class aboutme : AppCompatActivity() {
             startActivity(openURL)
         }
 
+        val whatsapp = findViewById<ImageView>(R.id.whatsapp)
+        whatsapp.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://chat.whatsapp.com/D9dFIP1LVduI0SqL2SEXXv")
+            startActivity(openURL)
+        }
+
+
     }
 }

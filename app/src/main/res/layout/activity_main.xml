@@ -97,7 +97,7 @@
 
                     <ImageView
                         android:id="@+id/imagebutton"
-                        android:layout_width="150dp"
+                        android:layout_width="140dp"
                         android:layout_height="100dp"
                         android:layout_alignParentRight="true"
                         android:maxHeight="100dp"
@@ -148,7 +148,7 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:layout_width="150dp"
+                    android:layout_width="140dp"
                     android:layout_height="100dp"
                     android:layout_alignParentRight="true"
                     android:maxHeight="100dp"
