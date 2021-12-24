@@ -18,5 +18,14 @@
         <item name="android:windowBackground">@drawable/splashscreenbg</item>
     </style>
 
+    <style name="Theme.Pylabs.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Pylabs.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Pylabs.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 
 </resources>

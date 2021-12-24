@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pylabs">
         <activity
+            android:name=".pong"
+            android:exported="false" />
+        <activity
+            android:name=".confor"
+            android:exported="false" />
+        <activity
+            android:name=".pcmn"
+            android:exported="false" />
+        <activity
+            android:name=".sankegame"
+            android:exported="false" />
+        <activity
+            android:name=".games"
+            android:exported="false" />
+        <activity
             android:name=".utube"
             android:exported="false" />
         <activity
@@ -23,9 +38,6 @@
             android:exported="false" />
         <activity
             android:name=".bspr"
-            android:exported="false" />
-        <activity
-            android:name=".baisc"
             android:exported="false" />
         <activity
             android:name=".opp"

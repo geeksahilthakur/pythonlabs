@@ -33,5 +33,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val gm = findViewById<CardView>(R.id.gm)
+        gm.setOnClickListener {
+            val intent = Intent(this, games::class.java)
+            startActivity(intent)
+        }
+
     }
 }

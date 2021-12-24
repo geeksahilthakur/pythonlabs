@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:context=".bspr">
+    tools:context=".games">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -30,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="Basic"
+                android:text="Games"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Basic python programs"
+                android:text="Simple python Games"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -111,7 +110,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/crd1"
-                android:layout_width="170dp"
+                android:layout_width="114dp"
                 android:layout_height="197dp"
                 android:layout_margin="8dp"
                 android:clickable="true"
@@ -133,13 +132,13 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/madlibs" />
+                        android:src="@drawable/snakegame" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Mad Libs Generator"
+                        android:text="Snake Game"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -170,13 +169,13 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/gss" />
+                        android:src="@drawable/pacman" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text=" Number Guessing"
+                        android:text="Pacman Game"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -207,13 +206,13 @@
                     <ImageView
                         android:layout_width="111dp"
                         android:layout_height="102dp"
-                        android:src="@drawable/stpc" />
+                        android:src="@drawable/confor" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Rock Paper Scissor"
+                        android:text="Connect Four"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -242,19 +241,44 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/utube" />
+                        android:src="@drawable/pong" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Youtube Video Downloader"
+                        android:text="Pong Game"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </androidx.gridlayout.widget.GridLayout>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
 
 </ScrollView>
