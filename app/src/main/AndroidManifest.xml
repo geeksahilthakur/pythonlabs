@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pylabs">
         <activity
+            android:name=".aboutme"
+            android:exported="false" />
+        <activity
             android:name=".pong"
             android:exported="false" />
         <activity

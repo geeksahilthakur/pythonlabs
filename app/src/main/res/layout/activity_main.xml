@@ -249,6 +249,8 @@
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/about"
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             app:cardCornerRadius="15dp"
@@ -284,7 +286,7 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:layout_width="150dp"
+                    android:layout_width="140dp"
                     android:layout_height="100dp"
                     android:layout_alignParentRight="true"
                     android:maxHeight="100dp"
