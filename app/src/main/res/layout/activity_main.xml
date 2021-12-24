@@ -154,6 +154,7 @@
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="120dp"
@@ -162,6 +163,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/basic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/yellow"

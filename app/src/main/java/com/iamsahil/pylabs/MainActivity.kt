@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RelativeLayout
+import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         val synbtn = findViewById<RelativeLayout>(R.id.synbtn)
         synbtn.setOnClickListener {
             val intent = Intent(this, crd::class.java)
+            startActivity(intent)
+        }
+
+        val basic = findViewById<RelativeLayout>(R.id.basic)
+        basic.setOnClickListener {
+            val intent = Intent(this, bspr::class.java)
             startActivity(intent)
         }
 

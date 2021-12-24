@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pylabs">
         <activity
+            android:name=".utube"
+            android:exported="false" />
+        <activity
+            android:name=".rps"
+            android:exported="false" />
+        <activity
+            android:name=".numgss"
+            android:exported="false" />
+        <activity
+            android:name=".mlg"
+            android:exported="false" />
+        <activity
+            android:name=".bspr"
+            android:exported="false" />
+        <activity
+            android:name=".baisc"
+            android:exported="false" />
+        <activity
             android:name=".opp"
             android:exported="false" />
         <activity
