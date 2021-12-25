@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="Data Types"
+                android:text="@string/data_types"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Data types in python programming"
+                android:text="@string/data_types_in_python_programming"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -62,15 +62,16 @@
                android:id="@+id/tech1"
                android:layout_width="115dp"
                android:layout_height="250dp"
-               android:src="@drawable/teacher"/>
+               android:src="@drawable/teacher"
+               android:contentDescription="@string/todo" />
 
             <TextView
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textSize="18sp"
                 android:textAlignment="viewEnd"
-                android:text=" \n \n In the Python Programming Language, everything is an object. Data types in Python represents the classes. The objects or instances of these classes are called variables. Let us now discuss the different kinds of data types in Python. "
+                android:text="@string/n_n_in_the_python_programming_language_everything_is_an_object_data_types_in_python_represents_the_classes_the_objects_or_instances_of_these_classes_are_called_variables_let_us_now_discuss_the_different_kinds_of_data_types_in_python"
                 android:fontFamily="sans-serif-light"/>
         </LinearLayout>
 
@@ -85,7 +86,7 @@
                 android:textAlignment="center"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/kollektif"
-                android:text="Built-in Data Types in Python"
+                android:text="@string/built_in_data_types_in_python"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -98,8 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text=" 1. Python Numbers "
-                android:textColor="@color/pink"
+                android:text="@string/_1_python_numbers"
+                android:textColor="#F06292"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pydtype" />
@@ -111,7 +112,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-light"
-                android:text="We can find complex numbers, floating point numbers and integers in the category of Python Numbers. Complex numbers are defined as a complex class, floating point numbers are defined as float and integers are defined as an int in Python."
+                android:text="@string/we_can_find_complex_numbers_floating_point_numbers_and_integers_in_the_category_of_python_numbers_complex_numbers_are_defined_as_a_complex_class_floating_point_numbers_are_defined_as_float_and_integers_are_defined_as_an_int_in_python"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -130,7 +131,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynumdis"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -141,7 +143,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -157,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/green"
-                android:text="Output"
+                android:text="@string/output"
                 android:textSize="20sp"
                 android:fontFamily="@font/kkb"
                 android:textAlignment="center"
@@ -177,7 +180,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out1"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -188,7 +192,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -205,7 +210,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="2. Python List"
+                android:text="@string/_2_python_list"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -238,7 +243,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynumdis1"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -249,7 +255,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -265,7 +272,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/green"
-                android:text="Output"
+                android:text="@string/output"
                 android:textSize="20sp"
                 android:fontFamily="@font/kkb"
                 android:textAlignment="center"
@@ -285,7 +292,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out3"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -296,7 +304,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -312,7 +321,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="3. Python Tuple"
+                android:text="@string/_3_python_tuple"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -345,7 +354,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynumdis2"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -356,7 +366,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -372,7 +383,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/green"
-                android:text="Output"
+                android:text="@string/output"
                 android:textSize="20sp"
                 android:fontFamily="@font/kkb"
                 android:textAlignment="center"
@@ -392,7 +403,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out4"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -403,7 +415,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -420,7 +433,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="4. Python Strings"
+                android:text="@string/_4_python_strings"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -453,7 +466,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynumdis3"
-                tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+                tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -464,7 +478,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -480,7 +495,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/green"
-                android:text="Output"
+                android:text="@string/output"
                 android:textSize="20sp"
                 android:fontFamily="@font/kkb"
                 android:textAlignment="center"
@@ -500,7 +515,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out5"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -511,7 +527,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -528,7 +545,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="5. Python Set"
+                android:text="@string/_5_python_set"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -561,7 +578,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynumdis4"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -572,7 +590,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -589,7 +608,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/green"
-                android:text="Output"
+                android:text="@string/output"
                 android:textSize="20sp"
                 android:fontFamily="@font/kkb"
                 android:textAlignment="center"
@@ -609,7 +628,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out6"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
                 <RelativeLayout
                     android:id="@+id/b5"
                     android:layout_width="match_parent"
@@ -618,7 +638,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
                     <thereisnospon.codeview.CodeView
                         android:id="@+id/cdv10"
                         android:layout_width="match_parent"
@@ -632,7 +653,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="6. Python Dictionary"
+                android:text="@string/_6_python_dictionary"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -663,7 +684,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynumdis5"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
                 <RelativeLayout
                     android:id="@+id/b115"
                     android:layout_width="match_parent"
@@ -672,7 +694,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
                     <thereisnospon.codeview.CodeView
                         android:id="@+id/cdv11"
                         android:layout_width="match_parent"
@@ -686,7 +709,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/green"
-                android:text="Output"
+                android:text="@string/output"
                 android:textSize="20sp"
                 android:fontFamily="@font/kkb"
                 android:textAlignment="center"
@@ -704,7 +727,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out7"
-                tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+                tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck"
+                android:focusable="true">
                 <RelativeLayout
                     android:id="@+id/b7"
                     android:layout_width="match_parent"
@@ -713,7 +737,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
                     <thereisnospon.codeview.CodeView
                         android:id="@+id/cdv12"
                         android:layout_width="match_parent"

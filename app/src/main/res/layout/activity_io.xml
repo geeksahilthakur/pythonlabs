@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="File I/O"
+                android:text="@string/file_i_o"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="file operations python"
+                android:text="@string/file_operations_python"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -69,17 +69,19 @@
                 android:id="@+id/tech1"
                 android:layout_width="115dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/teacher" />
+                android:src="@drawable/teacher"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/txt1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
                 android:fontFamily="sans-serif-light"
-                android:text="\n When we want to read from or write to a file, we need to open it first. When we are done, it needs to be closed so that the resources that are tied with the file are freed.Hence, in Python, a file operation takes place in the following order:"
+                android:text="@string/n_when_we_want_to_read_from_or_write_to_a_file_we_need_to_open_it_first_when_we_are_done_it_needs_to_be_closed_so_that_the_resources_that_are_tied_with_the_file_are_freed_hence_in_python_a_file_operation_takes_place_in_the_following_order"
                 android:textAlignment="viewEnd"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                tools:ignore="ExtraText" />
         </LinearLayout>
 
         <TextView
@@ -88,9 +90,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Opening Files in Python"
+            android:text="@string/opening_files_in_python"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="#009688"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -101,9 +103,9 @@
             android:id="@+id/txt4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="Python has a built-in open() function to open a file. This function returns a file object, also called a handle, as it is used to read or modify the file accordingly."
+            android:text="@string/python_has_a_built_in_open_function_to_open_a_file_this_function_returns_a_file_object_also_called_a_handle_as_it_is_used_to_read_or_modify_the_file_accordingly"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +125,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt4"
-            tools:ignore="DuplicateClickableBoundsCheck">
+            tools:ignore="DuplicateClickableBoundsCheck"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -134,7 +137,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -151,9 +155,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Writing to Files in Python"
+            android:text="@string/writing_to_files_in_python"
             android:textAlignment="center"
-            android:textColor="@color/pink"
+            android:textColor="#F06292"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -164,9 +168,9 @@
             android:id="@+id/txt5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="In order to write into a file in Python, we need to open it in write w, append a or exclusive creation x mode.We need to be careful with the w mode, as it will overwrite into the file if it already exists. Due to this, all the previous data are erased.Writing a string or sequence of bytes (for binary files) is done using the write() method. This method returns the number of characters written to the file."
+            android:text="@string/in_order_to_write_into_a_file_in_python_we_need_to_open_it_in_write_w_append_a_or_exclusive_creation_x_mode_we_need_to_be_careful_with_the_w_mode_as_it_will_overwrite_into_the_file_if_it_already_exists_due_to_this_all_the_previous_data_are_erased_writing_a_string_or_sequence_of_bytes_for_binary_files_is_done_using_the_write_method_this_method_returns_the_number_of_characters_written_to_the_file"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -185,7 +189,8 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt5">
+            app:layout_constraintTop_toBottomOf="@+id/txt5"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -196,7 +201,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -213,9 +219,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Reading Files in Python"
+            android:text="@string/reading_files_in_python"
             android:textAlignment="center"
-            android:textColor="@color/orange"
+            android:textColor="@color/yellow"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -226,9 +232,9 @@
             android:id="@+id/txt6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="To read a file in Python, we must open the file in reading r mode.There are various methods available for this purpose. We can use the read(size) method to read in the size number of data. If the size parameter is not specified, it reads and returns up to the end of the file.We can read the text.txt file we wrote in the above section in the following way:"
+            android:text="@string/to_read_a_file_in_python_we_must_open_the_file_in_reading_r_mode_there_are_various_methods_available_for_this_purpose_we_can_use_the_read_size_method_to_read_in_the_size_number_of_data_if_the_size_parameter_is_not_specified_it_reads_and_returns_up_to_the_end_of_the_file_we_can_read_the_text_txt_file_we_wrote_in_the_above_section_in_the_following_way"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -247,7 +253,8 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt6">
+            app:layout_constraintTop_toBottomOf="@+id/txt6"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -258,7 +265,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -275,7 +283,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Closing Files in Python"
+            android:text="@string/closing_files_in_python"
             android:textAlignment="center"
             android:textColor="@color/green"
             android:textSize="25sp"
@@ -288,9 +296,9 @@
             android:id="@+id/txt7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
-            android:text="When we are done with performing operations on the file, we need to properly close the file.Closing a file will free up the resources that were tied with the file. It is done using the close() method available in Python.Python has a garbage collector to clean up unreferenced objects but we must not rely on it to close the file."
+            android:text="@string/when_we_are_done_with_performing_operations_on_the_file_we_need_to_properly_close_the_file_closing_a_file_will_free_up_the_resources_that_were_tied_with_the_file_it_is_done_using_the_close_method_available_in_python_python_has_a_garbage_collector_to_clean_up_unreferenced_objects_but_we_must_not_rely_on_it_to_close_the_file"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -309,7 +317,8 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt7">
+            app:layout_constraintTop_toBottomOf="@+id/txt7"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -320,7 +329,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView

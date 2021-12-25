@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:padding="20dp"
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/kkb"
-            android:text="Python Labs"
+            android:text="@string/python_labs"
             android:textColor="@color/black"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Learn python from starch"
+            android:text="@string/learn_python_from_starch"
             android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +61,8 @@
                 android:layout_marginTop="25dp"
                 android:clickable="true"
                 app:cardCornerRadius="15dp"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -70,15 +71,16 @@
                     android:layout_height="match_parent"
                     android:background="@color/orange"
                     android:clickable="true"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:focusable="true">
 
                     <TextView
                         android:id="@+id/title1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:text="Intro."
+                        android:text="@string/intro"
                         android:textColor="@color/white"
                         android:textSize="30sp"
                         android:textStyle="bold"
@@ -89,9 +91,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/title1"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="3dp"
-                        android:text="Introduction to\n python programming"
+                        android:text="@string/introduction_to_n_python_programming"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
@@ -99,9 +101,10 @@
                         android:id="@+id/imagebutton"
                         android:layout_width="140dp"
                         android:layout_height="100dp"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
                         android:maxHeight="100dp"
-                        android:src="@drawable/snake" />
+                        android:src="@drawable/snake"
+                        android:contentDescription="TODO" />
 
                 </RelativeLayout>
 
@@ -123,15 +126,16 @@
                 android:layout_height="match_parent"
                 android:background="@color/pink"
                 android:padding="10dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:focusable="true">
 
                 <TextView
                     android:id="@+id/title2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="Syntax"
+                    android:text="@string/syntax"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -141,18 +145,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/title2"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="3dp"
-                    android:text="Basic syntax used\n in python programming"
+                    android:text="@string/basic_syntax_used_n_in_python_programming"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
                 <ImageView
                     android:layout_width="140dp"
                     android:layout_height="100dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:maxHeight="100dp"
-                    android:src="@drawable/pyhtonicon" />
+                    android:src="@drawable/pyhtonicon"
+                    tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck"
+                    android:contentDescription="@string/todo" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -175,9 +181,9 @@
                     android:id="@+id/title3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="Basic"
+                    android:text="@string/basic"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -187,18 +193,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/title3"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="3dp"
-                    android:text="Simple python programs for \n beginners with source code"
+                    android:text="@string/simple_python_programs_for_n_beginners_with_source_code"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
                 <ImageView
                     android:layout_width="140dp"
                     android:layout_height="90dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:maxHeight="100dp"
-                    android:src="@drawable/basic" />
+                    android:src="@drawable/basic"
+                    android:contentDescription="@string/todo" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -208,7 +215,8 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             app:cardCornerRadius="15dp"
-            android:layout_marginTop="25dp">
+            android:layout_marginTop="25dp"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -221,9 +229,9 @@
                     android:id="@+id/title4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="Games"
+                    android:text="@string/games"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -233,18 +241,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/title4"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="3dp"
-                    android:text="Simple python game for \n beginners source codes"
+                    android:text="@string/simple_python_game_for_n_beginners_source_codes"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:maxHeight="100dp"
-                    android:src="@drawable/games" />
+                    android:src="@drawable/games"
+                    tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck"
+                    android:contentDescription="@string/todo" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -254,7 +264,8 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             app:cardCornerRadius="15dp"
-            android:layout_marginTop="25dp">
+            android:layout_marginTop="25dp"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -267,9 +278,9 @@
                     android:id="@+id/title5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="About"
+                    android:text="@string/about"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -279,18 +290,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/title5"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="3dp"
-                    android:text="About the developer \n of python Labs"
+                    android:text="@string/about_the_developer_n_of_python_labs"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
                 <ImageView
                     android:layout_width="140dp"
                     android:layout_height="100dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:maxHeight="100dp"
-                    android:src="@drawable/about" />
+                    android:src="@drawable/about"
+                    android:contentDescription="@string/todo" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>

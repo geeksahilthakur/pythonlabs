@@ -55,7 +55,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/pyhtonicon" />
+            app:srcCompat="@drawable/pyhtonicon"
+            tools:ignore="ImageContrastCheck" />
 
         <LinearLayout
             android:id="@+id/linearLayout3"
@@ -143,7 +144,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6"
-            tools:ignore="DuplicateClickableBoundsCheck">
+            tools:ignore="DuplicateClickableBoundsCheck"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -154,7 +156,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
                 <TextView
                     android:id="@+id/textView8"

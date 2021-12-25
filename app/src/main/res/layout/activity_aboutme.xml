@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="About"
+                android:text="@string/about"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="About the developer"
+                android:text="@string/about_the_developer"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +62,8 @@
             android:src="@drawable/sahil"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ll1" />
+            app:layout_constraintTop_toBottomOf="@+id/ll1"
+            android:contentDescription="@string/todo" />
 
 
         <TextView
@@ -71,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/kollektif"
-            android:text="Sahil Thakur"
+            android:text="@string/sahil_thakur"
             android:textAlignment="center"
             android:textColor="@color/pink"
             android:textSize="25sp"
@@ -94,9 +95,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Hi, I'm Sahil Thakur,"
+                android:text="@string/hi_i_m_sahil_thakur"
                 android:textAlignment="center"
-                android:textColor="@color/orange"
+                android:textColor="@color/grey"
                 android:textSize="18sp" />
 
             <TextView
@@ -106,7 +107,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="5dp"
                 android:fontFamily="sans-serif-light"
-                android:text="As a Software Engineer and a Data Scientist, my skills include solid problem-solving abilities as well as experience with creating Apps and Websites."
+                android:text="@string/as_a_software_engineer_and_a_data_scientist_my_skills_include_solid_problem_solving_abilities_as_well_as_experience_with_creating_apps_and_websites"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -114,30 +115,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Future Updates"
+                android:text="@string/future_updates"
                 android:textAlignment="center"
                 android:textColor="@color/pink"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:fontFamily="sans-serif-light"
-                android:text="Python Labs will be updated in the near future with video tutorials and will also add an IDE for programming in Python."
+                android:text="@string/python_labs_will_be_updated_in_the_near_future_with_video_tutorials_and_will_also_add_an_ide_for_programming_in_python"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
             <TextView
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
                 android:fontFamily="@font/kkb"
-                android:text="Contact"
+                android:text="@string/contact"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:textColor="@color/grey"
                 android:textSize="25sp" />
 
             <TextView
@@ -146,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:fontFamily="sans-serif-light"
-                android:text="email: iam.sahil@outlook.com"
+                android:text="@string/email_iam_sahil_outlook_com"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -167,23 +169,31 @@
                     android:layout_height="50dp"
                     android:clickable="true"
                     android:src="@drawable/git"
-                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+                    android:contentDescription="@string/todo"
+                    android:focusable="true" />
 
                 <ImageView
-                    android:layout_marginRight="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:clickable="true"
                     android:id="@+id/whatsapp"
-                    android:layout_width="55dp"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/whatsapp" />
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:src="@drawable/whatsapp"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/todo"
+                    android:focusable="true" />
 
                 <ImageView
-                    android:clickable="true"
                     android:id="@+id/insta"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
-                    android:src="@drawable/insta" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:src="@drawable/insta"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                    android:focusable="true"
+                    android:contentDescription="@string/todo" />
 
 
             </LinearLayout>

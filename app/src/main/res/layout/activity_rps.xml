@@ -71,13 +71,13 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:src="@drawable/programmer" />
+                android:src="@drawable/stpc" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="8dp"
                 android:fontFamily="sans-serif-light"
                 android:text="This program or a mini-game is designed when you don’t have anyone to play or you are under lockdown alone. There are a number of functions that this program requires so let us have an overview of each."

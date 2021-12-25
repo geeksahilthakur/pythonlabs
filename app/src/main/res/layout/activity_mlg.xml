@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="Basic"
+                android:text="@string/basic"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Basic python programs"
+                android:text="@string/basic_python_programs"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -70,30 +70,31 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:src="@drawable/programmer" />
+                android:src="@drawable/madlibs"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="8dp"
                 android:fontFamily="sans-serif-light"
-                android:text="This python beginner project is a good start for beginner software developers as it has concepts like strings, variables, and concatenation. Mad Libs Generator teaches to manipulate user-inputted data as the Mad Libs refer to a series of inputs that a user enters. The input from the user could be anything from an adjective, a pronoun, or even a verb. After all the inputs are entered the application takes all the data and arranges it to build a story template. "
+                android:text="@string/this_python_beginner_project_is_a_good_start_for_beginner_software_developers_as_it_has_concepts_like_strings_variables_and_concatenation_mad_libs_generator_teaches_to_manipulate_user_inputted_data_as_the_mad_libs_refer_to_a_series_of_inputs_that_a_user_enters_the_input_from_the_user_could_be_anything_from_an_adjective_a_pronoun_or_even_a_verb_after_all_the_inputs_are_entered_the_application_takes_all_the_data_and_arranges_it_to_build_a_story_template"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
 
             <TextView
+                android:id="@+id/sc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sample Code"
-                android:textSize="25sp"
-                android:fontFamily="@font/kkb"
-                android:textColor="@color/pink"
-                android:textAlignment="center"
                 android:layout_marginTop="15dp"
-                android:id="@+id/sc"/>
+                android:fontFamily="@font/kkb"
+                android:text="@string/sample_code"
+                android:textAlignment="center"
+                android:textColor="#F06292"
+                android:textSize="25sp" />
 
             <RelativeLayout
                 android:id="@+id/b1"
@@ -105,7 +106,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView

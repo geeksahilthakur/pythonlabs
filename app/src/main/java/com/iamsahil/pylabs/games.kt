@@ -32,7 +32,7 @@ class games : AppCompatActivity() {
 
         val crd4 = findViewById<CardView>(R.id.crd4)
         crd4.setOnClickListener {
-            val intent = Intent(this, utube::class.java)
+            val intent = Intent(this, pong::class.java)
             startActivity(intent)
         };
 

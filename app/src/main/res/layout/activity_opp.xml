@@ -73,13 +73,14 @@
             <TextView
                 android:id="@+id/txt1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="Python is a multi-paradigm programming language. It supports different programming approaches.One of the popular approaches to solve a programming problem is by creating objects. This is known as Object-Oriented Programming (OOP)."
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:text="@string/python_is_a_multi_paradigm_programming_language_it_supports_different_programming_approaches_one_of_the_popular_approaches_to_solve_a_programming_problem_is_by_creating_objects_this_is_known_as_object_oriented_programming_oop"
                 android:fontFamily="sans-serif-light"
                 android:textAlignment="viewEnd"
                 android:textSize="17sp" />
         </LinearLayout>
+
         <TextView
             android:id="@+id/tv3"
             android:layout_width="0dp"
@@ -92,14 +93,15 @@
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ll2" />
+            app:layout_constraintTop_toBottomOf="@+id/ll2"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:layout_marginTop="10dp"
             android:id="@+id/txt4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-light"
             android:text="A class is a blueprint for the object.We can think of class as a sketch of a parrot with labels. It contains all the details about the name, colors, size etc. Based on these descriptions, we can study about the parrot. Here, a parrot is an object.The example for class of parrot can be :"
             android:textAlignment="center"
@@ -121,7 +123,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt4"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -132,7 +135,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -155,7 +159,8 @@
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/crd1" />
+            app:layout_constraintTop_toBottomOf="@+id/crd1"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:layout_marginTop="10dp"
@@ -184,7 +189,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt5"
-            tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck">
+            tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -195,7 +201,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -232,7 +239,8 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv5">
+            app:layout_constraintTop_toBottomOf="@+id/tv5"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -243,7 +251,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -262,7 +271,7 @@
             android:fontFamily="@font/kkb"
             android:text="Output"
             android:textAlignment="center"
-            android:textColor="@color/orange"
+            android:textColor="@color/yellow"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -279,7 +288,8 @@
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv6">
+            app:layout_constraintTop_toBottomOf="@+id/tv6"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -290,7 +300,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -309,7 +320,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="8dp"
             android:fontFamily="sans-serif-light"
-            android:text="In the above program, we created a class with the name Parrot. Then, we define attributes. \n \n The attributes are a characteristic of an object.These attributes are defined inside the __init__ method of the class. It is the initializer method that is first run as soon as the object is created.\n \n Then, we create instances of the Parrot class. Here, blu and woo are references (value) to our new objects.\n \n We can access the class attribute using __class__.species. Class attributes are the same for all instances of a class. Similarly, we access the instance attributes using blu.name and blu.age. However, instance attributes are different for every instance of a class."
+            android:text="@string/in_the_above_program_we_created_a_class_with_the_name_parrot_then_we_define_attributes_n_n_the_attributes_are_a_characteristic_of_an_object_these_attributes_are_defined_inside_the_init_method_of_the_class_it_is_the_initializer_method_that_is_first_run_as_soon_as_the_object_is_created_n_n_then_we_create_instances_of_the_parrot_class_here_blu_and_woo_are_references_value_to_our_new_objects_n_n_we_can_access_the_class_attribute_using_class_species_class_attributes_are_the_same_for_all_instances_of_a_class_similarly_we_access_the_instance_attributes_using_blu_name_and_blu_age_however_instance_attributes_are_different_for_every_instance_of_a_class"
             android:textAlignment="center"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"

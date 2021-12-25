@@ -69,13 +69,13 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:src="@drawable/programmer" />
+                android:src="@drawable/utube" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="8dp"
                 android:fontFamily="sans-serif-light"
                 android:text="With this project in python, we have successfully developed on How To Create Youtube Video Downloader Using Python . We used the popular Tkinter library that used for rendering graphics. We use the pytube library to download videos from youtube."

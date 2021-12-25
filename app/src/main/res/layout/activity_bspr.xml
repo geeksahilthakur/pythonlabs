@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
 
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="Basic"
+                android:text="@string/basic"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Basic python programs"
+                android:text="@string/basic_python_programs"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -71,14 +71,15 @@
                 android:id="@+id/tech1"
                 android:layout_width="148dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/programmer" />
+                android:src="@drawable/programmer"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="sans-serif-light"
-                android:text="Python is one of the most popular programming languages currently. It looks like this trend is about to continue in 2021 and beyond. So, if you are a Python beginner, the best thing you can do is work on some real-time Python project ideas."
+                android:text="@string/python_is_one_of_the_most_popular_programming_languages_currently_it_looks_like_this_trend_is_about_to_continue_in_2021_and_beyond_so_if_you_are_a_python_beginner_the_best_thing_you_can_do_is_work_on_some_real_time_python_project_ideas"
                 android:textAlignment="viewEnd"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -90,9 +91,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/kkb"
-            android:text="Basic Python Programs"
+            android:text="@string/basic_python_programs1"
             android:textAlignment="center"
-            android:textColor="@color/pink"
+            android:textColor="#F06292"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -121,7 +122,8 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="0"
-                app:layout_rowWeight="1">
+                app:layout_rowWeight="1"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -133,13 +135,14 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/madlibs" />
+                        android:src="@drawable/madlibs"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Mad Libs Generator"
+                        android:text="@string/mad_libs_generator"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -158,7 +161,8 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="0"
-                app:layout_rowWeight="1">
+                app:layout_rowWeight="1"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -170,13 +174,15 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/gss" />
+                        android:src="@drawable/gss"
+                        tools:ignore="ImageContrastCheck"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text=" Number Guessing"
+                        android:text="@string/number_guessing"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -195,7 +201,8 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="1"
-                app:layout_rowWeight="1">
+                app:layout_rowWeight="1"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -207,13 +214,14 @@
                     <ImageView
                         android:layout_width="111dp"
                         android:layout_height="102dp"
-                        android:src="@drawable/stpc" />
+                        android:src="@drawable/stpc"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Rock Paper Scissor"
+                        android:text="@string/rock_paper_scissor"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -230,7 +238,8 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="1"
-                app:layout_rowWeight="1">
+                app:layout_rowWeight="1"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -242,13 +251,14 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/utube" />
+                        android:src="@drawable/utube"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Youtube Video Downloader"
+                        android:text="@string/youtube_video_downloader"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>

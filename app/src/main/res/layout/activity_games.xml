@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
 
@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="Games"
+                android:text="@string/games"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Simple python Games"
+                android:text="@string/simple_python_games"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -70,16 +70,17 @@
                 android:id="@+id/tech1"
                 android:layout_width="148dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/programmer" />
+                android:src="@drawable/programmer"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
                 android:fontFamily="sans-serif-light"
-                android:text="Python is one of the most popular programming languages currently. It looks like this trend is about to continue in 2021 and beyond. So, if you are a Python beginner, the best thing you can do is work on some real-time Python project ideas."
+                android:text="@string/python_is_one_of_the_most_popular_programming_languages_currently_it_looks_like_this_trend_is_about_to_continue_in_2021_and_beyond_so_if_you_are_a_python_beginner_the_best_thing_you_can_do_is_work_on_some_real_time_python_project_ideas"
                 android:textAlignment="viewEnd"
-                android:textSize="18sp" />
+                android:textSize="17sp" />
         </LinearLayout>
 
 
@@ -89,9 +90,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/kkb"
-            android:text="Basic Python Programs"
+            android:text="@string/basic_python_programs2"
             android:textAlignment="center"
-            android:textColor="@color/pink"
+            android:textColor="#F06292"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +121,8 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="0"
-                app:layout_rowWeight="1">
+                app:layout_rowWeight="1"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -132,13 +134,14 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/snakegame" />
+                        android:src="@drawable/snakegame"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Snake Game"
+                        android:text="@string/snake_game"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -169,7 +172,8 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pacman" />
+                        android:src="@drawable/pacman"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -194,7 +198,8 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="1"
-                app:layout_rowWeight="1">
+                app:layout_rowWeight="1"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -206,13 +211,15 @@
                     <ImageView
                         android:layout_width="111dp"
                         android:layout_height="102dp"
-                        android:src="@drawable/confor" />
+                        android:src="@drawable/confor"
+                        tools:ignore="ImageContrastCheck,ImageContrastCheck"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Connect Four"
+                        android:text="@string/connect_four"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>
@@ -229,7 +236,8 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="1"
-                app:layout_rowWeight="1">
+                app:layout_rowWeight="1"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -241,13 +249,14 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/pong" />
+                        android:src="@drawable/pong"
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Pong Game"
+                        android:text="@string/pong_game"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
                 </LinearLayout>

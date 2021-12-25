@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="Statements"
+                android:text="@string/statements"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="if else statements in python programming"
+                android:text="@string/if_else_statements_in_python_programming"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -63,16 +63,17 @@
                 android:id="@+id/tech1"
                 android:layout_width="115dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/teacher" />
+                android:src="@drawable/teacher"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
                 android:fontFamily="sans-serif-light"
-                android:text=" \n \n Decision making is required when we want to execute a code only if a certain condition is satisfied.The if…elif…else statement is used in Python for decision making"
+                android:text="@string/n_decision_making_is_required_when_we_want_to_execute_a_code_only_if_a_certain_condition_is_satisfied_the_if_elif_else_statement_is_used_in_python_for_decision_making"
                 android:textAlignment="viewEnd"
-                android:textSize="18sp" />
+                android:textSize="17sp" />
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -86,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/kollektif"
-                android:text="if else statement in Python"
+                android:text="@string/if_else_statement_in_python"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="25sp"
@@ -99,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-light"
-                android:text="Decision making is required when we want to execute a code only if a certain condition is satisfied.The if…elif…else statement is used in Python for decision making."
+                android:text="@string/decision_making_is_required_when_we_want_to_execute_a_code_only_if_a_certain_condition_is_satisfied_the_if_elif_else_statement_is_used_in_python_for_decision_making"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -112,9 +113,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Python if Statement Syntax"
+                android:text="@string/python_if_statement_syntax"
                 android:textAlignment="center"
-                android:textColor="@color/pink"
+                android:textColor="#F06292"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynumdis" />
@@ -131,7 +132,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynum"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -142,7 +144,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -159,9 +162,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Example: Python if Statement"
+                android:text="@string/example_python_if_statement"
                 android:textAlignment="center"
-                android:textColor="@color/orange"
+                android:textColor="@color/yellow"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd1" />
@@ -178,7 +181,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynum1"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -189,7 +193,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -205,7 +210,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/kkb"
-                android:text="Output"
+                android:text="@string/output"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="20sp"
@@ -226,7 +231,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out1"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -237,7 +243,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -253,7 +260,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Syntax of if else"
+                android:text="@string/syntax_of_if_else"
                 android:textAlignment="center"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
@@ -272,7 +279,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynum2"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -283,7 +291,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -300,9 +309,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:text="Example of if else"
+                android:text="@string/example_of_if_else"
                 android:textAlignment="center"
-                android:textColor="@color/orange"
+                android:textColor="@color/yellow"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd4" />
@@ -319,7 +328,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pynum6"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -330,7 +340,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -346,7 +357,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/kkb"
-                android:text="Output"
+                android:text="@string/output"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="20sp"
@@ -368,7 +379,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/out2"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -379,7 +391,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -395,7 +408,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Python if elif else Statement"
+                android:text="@string/python_if_elif_else_statement"
                 android:textAlignment="center"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
@@ -414,7 +427,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/elif"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -425,7 +439,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView
@@ -441,9 +456,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Example of if elif else "
+                android:text="@string/example_of_if_elif_else"
                 android:textAlignment="center"
-                android:textColor="@color/orange"
+                android:textColor="@color/yellow"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/crd7" />
@@ -460,7 +475,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/elif1"
-                tools:ignore="DuplicateClickableBoundsCheck">
+                tools:ignore="DuplicateClickableBoundsCheck"
+                android:focusable="true">
 
 
                 <RelativeLayout
@@ -471,7 +487,8 @@
                     android:clickable="true"
                     android:padding="10dp"
                     android:textAlignment="center"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:focusable="true">
 
 
                     <thereisnospon.codeview.CodeView

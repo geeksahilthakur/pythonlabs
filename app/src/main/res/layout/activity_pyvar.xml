@@ -66,13 +66,14 @@
 
             <TextView
                 android:id="@+id/t7"
+                android:layout_marginRight="15dp"
                 android:layout_width="251dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-light"
                 android:text="\n A variable is a named location used to store data in the memory. It is helpful to think of variables as a container that holds data that can be changed later in the program.\n For example :"
                 android:textAlignment="viewEnd"
-                android:textSize="18sp" />
+                android:textSize="17sp" />
         </LinearLayout>
 
         <androidx.cardview.widget.CardView

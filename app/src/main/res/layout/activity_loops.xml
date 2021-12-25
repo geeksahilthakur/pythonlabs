@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kkb"
-                android:text="loops"
+                android:text="@string/loops"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="loops in python programming"
+                android:text="@string/loops_in_python_programming"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -68,14 +68,16 @@
                 android:id="@+id/tech1"
                 android:layout_width="115dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/teacher" />
+                android:src="@drawable/teacher"
+                android:contentDescription="@string/todo" />
+
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
                 android:fontFamily="sans-serif-light"
-                android:text="\n In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain condition is reached. ... A loop is a fundamental programming idea that is commonly used in writing programs."
+                android:text="@string/nin_computer_programming_a_loop_is_a_sequence_of_instruction_s_that_is_continually_repeated_until_a_certain_condition_is_reached_a_loop_is_a_fundamental_programming_idea_that_is_commonly_used_in_writing_programs"
                 android:textAlignment="viewEnd"
                 android:textSize="17sp" />
         </LinearLayout>
@@ -86,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="What is for loop in Python?"
+            android:text="@string/what_is_for_loop_in_python"
             android:textAlignment="center"
             android:textColor="@color/pink"
             android:textSize="25sp"
@@ -103,7 +105,7 @@
             android:textAlignment="center"
             android:textSize="18sp"
             android:fontFamily="sans-serif-light"
-            android:text="The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal."
+            android:text="@string/the_for_loop_in_python_is_used_to_iterate_over_a_sequence_list_tuple_string_or_other_iterable_objects_iterating_over_a_sequence_is_called_traversal"
             app:layout_constraintTop_toBottomOf="@id/tv2" />
 
         <TextView
@@ -112,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Example: Python for Loop"
+            android:text="@string/example_python_for_loop"
             android:textAlignment="center"
             android:textColor="@color/green"
             android:textSize="25sp"
@@ -133,7 +135,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv3"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -144,7 +147,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -162,9 +166,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Output"
+            android:text="@string/output"
             android:textAlignment="center"
-            android:textColor="@color/orange"
+            android:textColor="@color/yellow"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -183,7 +187,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv4"
-            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck">
+            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck"
+            android:focusable="true">
 
 
             <RelativeLayout
@@ -194,7 +199,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -214,7 +220,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="What is while loop in Python?"
+            android:text="@string/what_is_while_loop_in_python"
             android:textAlignment="center"
             android:textColor="@color/pink"
             android:textSize="25sp"
@@ -231,7 +237,7 @@
             android:textAlignment="center"
             android:textSize="18sp"
             android:fontFamily="sans-serif-light"
-            android:text="The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.We generally use this loop when we don't know the number of times to iterate beforehand."
+            android:text="@string/the_while_loop_in_python_is_used_to_iterate_over_a_block_of_code_as_long_as_the_test_expression_condition_is_true_we_generally_use_this_loop_when_we_don_t_know_the_number_of_times_to_iterate_beforehand"
             app:layout_constraintTop_toBottomOf="@id/tv5" />
 
         <TextView
@@ -240,7 +246,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Example: Python while Loop"
+            android:text="@string/example_python_while_loop"
             android:textAlignment="center"
             android:textColor="@color/green"
             android:textSize="25sp"
@@ -272,7 +278,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
@@ -290,9 +297,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/kkb"
-            android:text="Output"
+            android:text="@string/output"
             android:textAlignment="center"
-            android:textColor="@color/orange"
+            android:textColor="@color/yellow"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -323,7 +330,8 @@
                 android:clickable="true"
                 android:padding="10dp"
                 android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck">
+                tools:ignore="SpeakableTextPresentCheck"
+                android:focusable="true">
 
 
                 <thereisnospon.codeview.CodeView
